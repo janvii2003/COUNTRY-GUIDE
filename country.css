@@ -30,7 +30,6 @@
 .country-details-container{
   max-width: 1200px;
   margin-inline:auto;
-
 }
 
 .country-details {
@@ -38,6 +37,8 @@
   align-items: center;
   gap: 70px;
   margin-top: 60px;
+  padding: 30px;
+  width: 100%;
 }
 
 .country-details img {

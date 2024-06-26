@@ -1,13 +1,16 @@
 :root{
 --background-color: white;
 --text-color: black;
---element-color: white;
+--element-color: rgb(255, 255, 255);;
+--card-hover-color:rgb(233, 231, 229);
 }
 
 body.dark{
     --background-color:hsl(207,26%,17%);
     --text-color: white;
     --element-color: hsl(209,23%,22%);
+    --card-hover-color:hsl(211, 20%, 30%);
+
 }
 
 *{
@@ -74,7 +77,7 @@ a{
 .country-card:hover{
     transform: scale(1.04);
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
-
+    background-color: var(--card-hover-color);
 }
 
 .card-text{
