@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRY GUIDE</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body onload="themeCheck()">
+   
+    <header class="header-container ">
+        <div class="header-content ">
+            <h2 class="title "><a href="/">Where in the world?</a></h2>
+
+            <div class="toggle-btn">
+                <p>Mode</p>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="search-filter-container">
+            <div class="search-container">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search countries">
+            </div>
+    
+            <select class="filter-container">
+                <option value="filterbyregion" hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+           
+        </div>
+
+        <div class="countries-container">
+         </div>
+    </main>
+    
+   <h1 class="hidden" hidden>hello</h1>
+</body>
+</html>
